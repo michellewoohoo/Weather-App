@@ -1,10 +1,10 @@
 #weatherSection{
-    height:50%
+    height:40%
 }
 #weatherGif{
  
-    width: 70%;
-    height: 70%
+    width: 60%;
+    height: 60%
     
 }
 #inputText{
@@ -14,5 +14,23 @@
     font-family:Arial, Helvetica, sans-serif
 }
 body{
-    background-color:white 
+    background-color:white; 
+    font-family: 'Gamja Flower'
+}
+
+header {
+    color: grey;
+    position:absolute;
+    top:10px;    
+    right:20px;  
+    font-size: 1.3vw
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
 }
