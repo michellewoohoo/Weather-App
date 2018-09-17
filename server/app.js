@@ -28,6 +28,7 @@ io.on('connection', (socket) => {
                         console.log(errorMessage);
                     } else{
                         results.temperature = weather.temperature;
+                        results.icon = weather.icon;
                         socket.emit('weatherData', results);
                         console.log(JSON.stringify(results, undefined, 2));
                     }
