@@ -3,6 +3,8 @@ const yargs = require('yargs');
 const geocode = require('./geocode/geocode');
 const weather = require('./weather/weather');
 
+const port = process.env.PORT || 8000;
+
 const path = require('path');
 const http = require('http');
 const express = require('express');
@@ -37,8 +39,8 @@ io.on('connection', (socket) => {
         });
     });
 });
-server.listen(8000, () => {
-    console.log('Server is up on port 8000');
+server.listen(port, () => {
+    console.log(`Server is up on port ${port}`);
 });
 
 
